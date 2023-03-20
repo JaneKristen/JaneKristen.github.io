@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF=8">
+<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title> INAKA </title>
-<meta charset="UTF=8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title> Inaka </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FAQ Accordion Card</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="stylesheet.css">
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat+Alternates:wght@100;200;300;400;500&family=Playfair+Display:ital,wght@1,800&family=Poppins:ital,wght@0,400;1,300&family=Quicksand:wght@300;400;600&family=Rampart+One&display=swap');
+</style>
 <script src="https://kit.fontawesome.com/9de92159c1.js" crossorigin="anonymous"></script>
-
-
 </head>
 <body>
+  <div class="spacer"></div>
+  <header>
+    <nav class="topnav" id="myTopnav">
+    <a href="index.html" class="inaka">INAKA</a>
+    <button onclick=myFunction() style="font-size:15px;" class="navBtn"><span></span><span></span><span></span></button>
 
-  <div class="topnav" id="myTopnav">
-    <a href="index.html" class="active">INAKA</a>
-    <a href="index.html">Home</a>
+    <a href="index.html" class="active">Home</a>
     <a href="about.html">About</a>
     <a href="ourstory.html">Our Story</a>
     <a href="viewopps.html">View Opportunties</a>
-    <a href="contact.html">Contact</a>
+    
 
   <div class="dropdown">
     <button class="dropbtn">FAQ
@@ -51,23 +55,37 @@
       <a href="#">日本語</a>
     </div>
   </div>
+</nav>
+</header>
 
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+
+
+
 
 
 <script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
   }
-}
-</script>
+
+const menuButton = document.querySelector('.navBtn');
+console.log('$$', menuButton)
+const nav = document.querySelector('.nav-links');
+const navLinks = document.querySelectorAll('.nav-links li');
+
+menuButton.addEventListener('click',() => {
+  menuButton.classList.toggle('is-open');
+});
+  </script>
 
 
+      <!--/*end*/-->
+<script src="faq.js"></script>
 
 <!-- end of nav section -->
 <!-- FAQ Accordion-->
@@ -83,7 +101,7 @@ function myFunction() {
       <div class="question">
         <h3 class="title_question">
           Question one?</h3>
-        <img src="icon-arrow-down.png" alt="arrow" width="20px">
+        <img src="images/icon-arrow-down.png" alt="arrow" width="20px">
       </div>
       <div class="answer">
         Answer one.
@@ -94,7 +112,7 @@ function myFunction() {
       <div class="question">
         <h3 class="title_question">
           Question two?</h3>
-        <img src="icon-arrow-down.png" alt="arrow" width="20px">
+        <img src="images/icon-arrow-down.png" alt="arrow" width="20px">
       </div>
       <div class="answer">
         Answer two.
@@ -105,7 +123,7 @@ function myFunction() {
       <div class="question">
         <h3 class="title_question">
           Question three?</h3>
-        <img src="icon-arrow-down.png" alt="arrow" width="20px">
+        <img src="images/icon-arrow-down.png" alt="arrow" width="20px">
       </div>
       <div class="answer">
         Answer three.
@@ -116,7 +134,7 @@ function myFunction() {
       <div class="question">
         <h3 class="title_question">
           Question four?</h3>
-        <img src="icon-arrow-down.png" alt="arrow" width="20px">
+        <img src="images/icon-arrow-down.png" alt="arrow" width="20px">
       </div>
       <div class="answer">
         Answer four.
