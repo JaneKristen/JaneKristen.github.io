@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title> Inaka </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="stylesheet.css">
+
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat+Alternates:wght@100;200;300;400;500&family=Playfair+Display:ital,wght@1,800&family=Poppins:ital,wght@0,400;1,300&family=Quicksand:wght@300;400;600&family=Rampart+One&display=swap');
+</style>
+<script src="https://kit.fontawesome.com/9de92159c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="spacer"></div>
+    <header>
+      <nav class="topnav" id="myTopnav">
+      <a href="index.html"class="inaka">INAKA</a>
+      <button onclick=myFunction() style="font-size:15px;" class="navBtn"><span></span><span></span><span></span></button>
+  
+      <a href="index.html" >Home</a>
+      <a href="about.html">About</a>
+      <a href="ourstory.html">Our Story</a>
+      <a href="viewopps.html"class="active">View Opportunties</a>
+      
+  
+    <div class="dropdown">
+      <button class="dropbtn">FAQ
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="volfaq.html">Volunteer FAQ</a>
+        <a href="hostfaq.html">Host FAQ</a>
+      </div>
+    </div>
+      <!--/* images for links to apple and google */-->
+    <div class="icon1">
+    <a href="https://www.apple.com/app-store/" class="icon1" aria-label="apple">
+    <i class="fab fa-brands fa-apple fa-1x"></i></a>
+    <a href="https://play.google.com/" class= "icon1" aria-label= "google">
+      <i class="fab fa-brands fa-google-plus fa-1x"></i></a>
+    </div>
+          <!--/*end*/-->
+  
+    <div class="dropdown" id="navright">
+      <button class="dropbtn">Language
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">English</a>
+        <a href="#">日本語</a>
+      </div>
+    </div>
+  </nav>
+  </header>
+  
+  
+  
+  
+  
+  
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  
+  const menuButton = document.querySelector('.navBtn');
+  console.log('$$', menuButton)
+  const nav = document.querySelector('.nav-links');
+  const navLinks = document.querySelectorAll('.nav-links li');
+  
+  menuButton.addEventListener('click',() => {
+    menuButton.classList.toggle('is-open');
+  });
+    </script>
+  
+  
+        <!--/*end*/-->
+  <script src="faq.js"></script>
+  
+  <!-- end of nav section -->
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<div class="spacer"></div>
+
+
+<div class="opp_box">
+<div class="HostName">
+<h1 class="VolOps2" > Hatake Farm </h1>
+</div>
+
+
+  <img src="images/HostImage1.png" class="rounded2" alt="girls on farm">
+  <h3 class="VolOps2">Wakayama, Kansai Region</h3>
+  <img src="images/Kansai.png" class="map" alt="map of kansai">
+
+  <br>
+  <h3>Overview:</h3>
+  <p>Lacerat in egestas erat imperdiet sed euismod nisi porta lorem.
+  Blandit libero volutpat sed cras ornare arcu dui vivamus arcu.
+  Sit amet massa vitae tortor condimentum lacinia quis vel.
+  Risus ultricies tristique nulla aliquet enim tortor at.
+  Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi.<br><br>
+  Pellentesque sit amet porttitor eget.
+  Amet facilisis magna etiam tempor orci eu. Turpis massa tincidunt dui ut ornare lectus sit.
+  Faucibus et molestie ac feugiat sed lectus vestibulum.
+  lacerat in egestas erat imperdiet sed euismod nisi porta lorem.
+  Blandit libero volutpat sed cras ornare arcu dui vivamus arcu.
+  Sit amet massa vitae tortor condimentum lacinia quis vel.
+  Risus ultricies tristique nulla aliquet enim tortor at.
+  </p>
+
+   <h3> Address</h3>
+    <p>1-2-3 Faucibus et molestie, lacerat in egestas erat.
+      <br> imperdiet, porta lorem.</p>
+
+   <h3>Host Type</h3>
+   <ul>
+   <li>Aucibus et molestie ac feugiat sed lectus vestibulum.</li>
+   <li>lacerat in egestas erat imperdiet sed euismod nisi porta lorem.</li>
+   <li>Blandit libero volutpat sed cras ornare arcu dui vivamus arcu.</li>
+   <li>Sit amet massa vitae tortor condimentum lacinia quis vel.</li>
+   <li>Aucibus et molestie ac feugiat sed lectus vestibulum.</li>
+   <li>lacerat in egestas erat imperdiet sed euismod nisi porta lorem.</li>
+ </ul>
+
+   <h3>Activities</h3>
+   <ul>
+   <li>Aucibus et molestie ac feugiat sed lectus vestibulum.</li>
+   <li>lacerat in egestas erat imperdiet sed euismod nisi porta lorem.</li>
+   <li>Blandit libero volutpat sed cras ornare arcu dui vivamus arcu.</li>
+   <li>Sit amet massa vitae tortor condimentum lacinia quis vel.</p></li>
+ </ul>
+   <h3>Acceptance Period</h3>
+  <p> All Year round</P>
+
+<h3>Length of Stay</h3>
+<p> lacerat in egestas erat imperdiet sed euismod nisi porta lorem.
+  Blandit libero volutpat sed cras ornare arcu dui vivamus arcu.</p>
+
+  <h3>Climate</h3>
+  <p> lacerat in egestas erat <br>
+    imperdiet sed euismod nisi porta lorem.<br>
+    Blandit libero volutpat <br>
+    sed cras ornare arcu dui vivamus arcu.</p>
+
+  <h3>Farm Culture</h3>
+  <ul>
+  <li>Aucibus et molestie ac feugiat sed lectus vestibulum.</li>
+  <li>lacerat in egestas erat imperdiet sed euismod nisi porta lorem.</li>
+  <li>Blandit libero volutpat sed cras ornare arcu dui vivamus arcu.</li>
+  <li>Sit amet massa vitae tortor condimentum lacinia quis vel.</p></li>
+</ul>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext" >1 / 4</div>
+  <img src="images/HostImage1.png"onclick="currentSlide(2)">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="images/corn.png"onclick="currentSlide(3)">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="images/HostImage3.png"onclick="currentSlide(4)">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext" >4 / 4</div>
+  <img src="images/HostImage2.png" onclick="currentSlide(1)">
+</div>
+
+<!--<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>-->
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+  </div>
