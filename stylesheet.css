@@ -640,7 +640,8 @@ footer{
 .aboutlink:hover{
   background-color: #E0EAD7;
   color:#333;
-  transition: 0.7s;  
+  transition: 0.7s;
+  text-decoration: none;  
 }
 .aboutlink2{
   float:right;
